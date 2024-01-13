@@ -6,9 +6,9 @@ Can be imported the same way as [MrOtherGuy's firefox-csshacks](https://github.c
 
 ## userContent.css
 ```css
-@import url(/content/contentModernDevtools.css);
+@import url(content/contentModernDevtools.css);
 ```
 ## userChrome.css
 ```css
-@import url(/chrome/chromeModernDevtools.css);
+@import url(chrome/chromeModernDevtools.css);
 ```
