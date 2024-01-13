@@ -1,0 +1,35 @@
+/*  Makes the sidebar a little nicer  */
+#sidebar-splitter{display: none}
+#sidebar-header{padding-bottom: 0!important; border-bottom: 0!important}
+
+/*  The thing in the bottom with links  */
+#statuspanel-label{background-color: var(--toolbar-field-background-color)!important; border-color: transparent!important; border-radius: 5px !important; color: currentColor!important; margin: 0 0 2.5px 2px!important; padding: 5px!important; opacity: 100%;}
+
+/*  Devtools  */
+.devtools-horizontal-splitter{margin-top: 7px !important;margin-bottom:-12px !important;opacity: 0;}
+.devtools-side-splitter{opacity: 0;}
+.devtools-toolbox-side-iframe{margin-top: -10px; border-radius: 10px;}
+
+#customization-panelWrapper {max-width: 30em!important}  /*  Fixes the customization page  */
+#customization-container > *{margin-top: -10px; background-color: var(--toolbar-field-background-color) !important}  /*  Customizes the customization page  */
+
+#urlbar:not([open]){color: currentColor!important} #urlbar[open]{color: var(--toolbar-field-focus-color)}  /*  Fixes the urlbar color on some themes  */
+
+/*  Makes sidebars nicer  */
+#sidebar-box{margin-top: -10px !important; border-radius: 0 10px 0 0!important; z-index: 1}
+#sidebar-box[positionend="true"]{border-radius: 10px 0 0 0!important}
+#sidebar-box > *{background-image:none;}
+
+/*  Rounded corner in pages  *//*  layout.css.has-selector.enabled  */
+[inFullscreen] #tabbrowser-tabpanels, [inFullscreen] .browserStack>browser{border-radius: 0 !important; margin: 0 !important; transition: border-radius .7s !important}
+.browserStack{background-color: transparent !important; border-radius: 10px !important; z-index: 2;}
+.browserContainer{background-color: transparent}
+.browserContainer:has(> .devtools-toolbox-bottom-iframe) .browserStack>browser{margin-bottom: -10px !important; border-bottom-right-radius: 10px !important; border-bottom-left-radius: 10px !important; transition: border-radius .2s !important}
+findbar{height: 50px; border: none !important; background-color: -moz-Dialog !important; z-index: 1;}
+.browserContainer:has(> .devtools-toolbox-bottom-iframe) findbar{border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;}
+.findbar-container, findbar .close-icon{margin-top: 10px !important}
+.browserContainer:has(> findbar)  .browserStack>browser{margin-bottom: -10px !important; border-bottom-right-radius: 10px !important; border-bottom-left-radius: 10px !important; transition: border-radius .2s !important}
+.browserContainer:has(> .devtools-toolbox-bottom-iframe):has(> findbar) findbar{margin-bottom: -10px !important;}
+[inFullscreen] .browserContainer:has(> .devtools-toolbox-bottom-iframe) .browserStack>browser{margin-bottom: -10px !important; border-bottom-right-radius: 10px !important; border-bottom-left-radius: 10px !important; transition: border-radius .2s !important}
+[inFullscreen] .browserContainer:has(> findbar)  .browserStack>browser{margin-bottom: -10px !important; border-bottom-right-radius: 10px !important; border-bottom-left-radius: 10px !important; transition: border-radius .2s !important}
+#main-window{background-color: -moz-Dialog}
